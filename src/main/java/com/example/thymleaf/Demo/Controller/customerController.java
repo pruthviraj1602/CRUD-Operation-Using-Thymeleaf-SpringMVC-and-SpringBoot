@@ -66,14 +66,15 @@ public class customerController {
         return "redirect:/Table";
     }
 
-//    @PostMapping("/loginCustomer")
-//    public String loginCustomer(@ModelAttribute Customer customer){
-//        String cEmail = customer.getCEmail();
-//        String cPassword = customer.getCPassword();
-//        Customer customer1 = serviceIMPL.loginCustomer(cEmail, cPassword);
-//        if(customer1!=null){
-//            return "redirect:/Table";
-//        }
-//        return "redirect:/Login";
-//    }
+    @GetMapping("/loginCustomer")
+    public String loginCustomer(@ModelAttribute Customer customer){
+        String cEmail = customer.getCEmail();
+        String cPassword = customer.getCPassword();
+        Customer customer1 = serviceIMPL.loginCustomer(cEmail, cPassword);
+        if(customer1!=null){
+            System.out.println("success Login");
+            return "redirect:/Table";
+        }
+        return "redirect:/Login";
+    }
 }

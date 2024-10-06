@@ -55,8 +55,8 @@ public class serviceIMPL implements customerService {
         return customerRepository.deleteCustomerById(id);
     }
 
-//    @Override
-//    public Customer loginCustomer(String cEmail, String cPassword) {
-//        return customerRepository.getCustomerByCEmailAndCPassword(cEmail,cPassword);
-//    }
+    @Override
+    public Customer loginCustomer(String cEmail, String cPassword) {
+        return customerRepository.getCustomerByCEmailAndCPassword(cEmail,cPassword);
+    }
 }

@@ -17,6 +17,6 @@ public interface customerService {
 
     public Integer deleteCustomer(int id);
 
-//    public Customer loginCustomer(String cEmail,String cPassword);
+    public Customer loginCustomer(String cEmail,String cPassword);
 
 }

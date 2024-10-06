@@ -13,7 +13,7 @@
         <th scope="col">Address</th>
         <th scope="col">Gender</th>
         <th scope="col">Email</th>
-        <th scope="col">Password</th>
+
         <th scope="col">Actions</th>
     </tr>
     </thead>
@@ -24,7 +24,7 @@
         <td>[[${c.cAddress}]]</td>
         <td>[[${c.cGender}]]</td>
         <td>[[${c.cEmail}]]</td>
-        <td>[[${c.cPassword}]]</td>
+
         <td>
             <a class="btn btn-outline-success btn-sm" th:href="@{'getCustomer/' + ${c.id}}">Update</a>
             <a class="btn btn-outline-danger btn-sm" th:href="@{'deleteCustomer/' + ${c.id}}">Update</a>
